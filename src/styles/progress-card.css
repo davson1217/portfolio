@@ -1,0 +1,11 @@
+.progress {
+    height: 200px;
+    width: 380px;
+    background-color: black;
+    border: 2px solid turquoise;
+    margin: 5px 10px;
+}
+.progress-header {
+    padding: 5px;
+    margin: 0;
+}

@@ -1,0 +1,235 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Work Experience Tree</title>-->
+<!--    <style>-->
+<!--        /* Define styles for the progress items */-->
+<!--        .progress {-->
+<!--            position: relative;-->
+<!--            list-style: none;-->
+<!--            margin: 10px;-->
+<!--            padding: 10px;-->
+<!--            border: 2px solid #007bff; /* Border color */-->
+<!--            border-radius: 5px;-->
+<!--            background-color: #f0f0f0; /* Background color */-->
+<!--        }-->
+
+<!--        /* Style connecting lines */-->
+<!--        .progress::before,-->
+<!--        .progress::after {-->
+<!--            content: '';-->
+<!--            position: absolute;-->
+<!--            border: 2px solid #007bff; /* Line color */-->
+<!--        }-->
+
+<!--        .progress::before {-->
+<!--            left: -15px; /* Adjust the distance from the left side */-->
+<!--            top: 10px; /* Adjust the vertical position */-->
+<!--            height: calc(100% - 20px); /* Match the height of the card */-->
+<!--        }-->
+
+<!--        .progress::after {-->
+<!--            left: 100%; /* Position at the right edge of the card */-->
+<!--            top: 50%; /* Centered vertically */-->
+<!--            height: 2px; /* Line thickness */-->
+<!--            width: 15px; /* Length of the connecting line */-->
+<!--        }-->
+
+<!--        /* Style the hierarchy */-->
+<!--        ul {-->
+<!--            list-style: none;-->
+<!--            padding-left: 0;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Work Experience</h1>-->
+<!--<ul>-->
+<!--    <li class="progress">Job Title 1-->
+<!--        <ul>-->
+<!--            <li class="progress">Sub-Role 1.1</li>-->
+<!--            <li class="progress">Sub-Role 1.2</li>-->
+<!--        </ul>-->
+<!--    </li>-->
+<!--    <li class="progress">Job Title 2-->
+<!--        <ul>-->
+<!--            <li class="progress">Sub-Role 2.1-->
+<!--                <ul>-->
+<!--                    <li class="progress">Sub-Sub-Role 2.1.1</li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li class="progress">Sub-Role 2.2</li>-->
+<!--        </ul>-->
+<!--    </li>-->
+<!--    <li class="progress">Job Title 3</li>-->
+<!--</ul>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--Responsive-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Work Experience Tree</title>-->
+<!--    <style>-->
+<!--        /* Define styles for the progress items */-->
+<!--        .progress-list {-->
+<!--            display: flex;-->
+<!--            flex-wrap: wrap;-->
+<!--            justify-content: flex-start;-->
+<!--            gap: 10px; /* Adjust the gap between items */-->
+<!--            padding: 10px;-->
+<!--        }-->
+
+<!--        .progress {-->
+<!--            flex: 1;-->
+<!--            min-width: calc(33.33% - 20px); /* Adjust the width based on the number of columns you want */-->
+<!--            max-width: calc(33.33% - 20px); /* Adjust the width based on the number of columns you want */-->
+<!--            margin: 10px;-->
+<!--            padding: 10px;-->
+<!--            border: 2px solid #007bff; /* Border color */-->
+<!--            border-radius: 5px;-->
+<!--            background-color: #f0f0f0; /* Background color */-->
+<!--            position: relative;-->
+<!--        }-->
+
+<!--        /* Style connecting lines */-->
+<!--        .progress::before,-->
+<!--        .progress::after {-->
+<!--            content: '';-->
+<!--            position: absolute;-->
+<!--            border: 2px solid #007bff; /* Line color */-->
+<!--        }-->
+
+<!--        .progress::before {-->
+<!--            left: -15px; /* Adjust the distance from the left side */-->
+<!--            top: 10px; /* Adjust the vertical position */-->
+<!--            height: calc(100% - 20px); /* Match the height of the card */-->
+<!--        }-->
+
+<!--        .progress::after {-->
+<!--            left: 100%; /* Position at the right edge of the card */-->
+<!--            top: 50%; /* Centered vertically */-->
+<!--            height: 2px; /* Line thickness */-->
+<!--            width: 15px; /* Length of the connecting line */-->
+<!--        }-->
+
+<!--        /* Style the hierarchy */-->
+<!--        ul {-->
+<!--            list-style: none;-->
+<!--            padding-left: 0;-->
+<!--        }-->
+
+<!--        @media (max-width: 767px) {-->
+<!--            /* Stack items in a column on small viewports */-->
+<!--            .progress-list {-->
+<!--                flex-direction: column;-->
+<!--                align-items: stretch;-->
+<!--            }-->
+
+<!--            .progress {-->
+<!--                min-width: 100%; /* Full width on small viewports */-->
+<!--                max-width: 100%; /* Full width on small viewports */-->
+<!--            }-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Work Experience</h1>-->
+<!--<div class="progress-list">-->
+<!--    <div class="progress">Job Title 1-->
+<!--        <ul>-->
+<!--            <li class="progress">Sub-Role 1.1</li>-->
+<!--            <li class="progress">Sub-Role 1.2</li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <div class="progress">Job Title 2-->
+<!--        <ul>-->
+<!--            <li class="progress">Sub-Role 2.1-->
+<!--                <ul>-->
+<!--                    <li class="progress">Sub-Sub-Role 2.1.1</li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li class="progress">Sub-Role 2.2</li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <div class="progress">Job Title 3</div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--Simple-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Work Experience Tree</title>-->
+<!--    <style>-->
+<!--        /* Define styles for the progress items */-->
+<!--        .progress-list {-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--            gap: 10px; /* Adjust the gap between items */-->
+<!--            padding: 10px;-->
+<!--        }-->
+
+<!--        .progress {-->
+<!--            position: relative;-->
+<!--            padding: 15px;-->
+<!--            border: 2px solid #007bff; /* Border color */-->
+<!--            border-radius: 5px;-->
+<!--            background-color: #f0f0f0; /* Background color */-->
+<!--        }-->
+
+<!--        /* Style connecting lines */-->
+<!--        .progress::before,-->
+<!--        .progress::after {-->
+<!--            content: '';-->
+<!--            position: absolute;-->
+<!--            border: 2px solid #007bff; /* Line color */-->
+<!--        }-->
+
+<!--        .progress::before {-->
+<!--            left: -15px; /* Adjust the distance from the left side */-->
+<!--            top: 50%; /* Centered vertically */-->
+<!--            height: 2px; /* Line thickness */-->
+<!--            width: 15px; /* Length of the connecting line */-->
+<!--        }-->
+
+<!--        .progress::after {-->
+<!--            left: 100%; /* Position at the right edge of the card */-->
+<!--            top: 50%; /* Centered vertically */-->
+<!--            height: 2px; /* Line thickness */-->
+<!--            width: 15px; /* Length of the connecting line */-->
+<!--        }-->
+
+<!--        /* Style the hierarchy */-->
+<!--        ul {-->
+<!--            list-style: none;-->
+<!--            padding-left: 0;-->
+<!--        }-->
+
+<!--        @media (min-width: 768px) {-->
+<!--            /* Arrange items in a row on larger viewports */-->
+<!--            .progress-list {-->
+<!--                flex-direction: row;-->
+<!--                align-items: center;-->
+<!--            }-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Work Experiences</h1>-->
+<div class="progress-list">
+    <div class="progress">Job Title 1</div>
+    <div class="progress">Job Title 2</div>
+    <div class="progress">Job Title 3</div>
+</div>
+<!--</body>-->
+<!--</html>-->

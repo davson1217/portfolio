@@ -5,6 +5,7 @@
     display: flex;
     overflow-y: auto;
 }
+.my-name {color: turquoise}
 .app.dark {background-color: black;}
 .portfolio {margin-top: 50px;}
 
