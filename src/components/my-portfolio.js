@@ -3,7 +3,7 @@ import '../styles/my-portfolio.css'
 
 const MyPortfolio = () => {
     return (
-        <div className="row">
+        <div className="row justify-content-center">
             <div className="gallery col-sm-4">
                 <a target="_blank" href="https://lilac-cms.netlify.app/">
                     <img src="glass2.jpeg" alt="Cinque Terre" width="400" height="200" />
@@ -22,7 +22,7 @@ const MyPortfolio = () => {
                 <a target="_blank" href="https://lilac-cms.netlify.app/">
                     <img src="MT1.jpeg" alt="Cinque Terre" width="400" height="200" />
                 </a>
-                <div className="desc">Restaurant Marketplace</div>
+                <div className="desc">Machine Transliteration</div>
             </div>
 
         </div>

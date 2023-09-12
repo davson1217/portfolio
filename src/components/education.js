@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Education = () => {
     return (
-        <div className="progress-list row g-2">
+        <div className="progress-list row g-2 justify-content-sm-center justify-content-md-start">
             <div className="progress col-sm-12 col-md-6 col-lg-4 row">
                 <header className="progress-header row">
                     <div className="col-sm-12 row">
