@@ -68,7 +68,7 @@ const Education = () => {
                         <div className="progress-header__icon col-sm-1">
                             <FontAwesomeIcon icon={faBook} color='turquoise' size={"lg"}/>
                         </div>
-                        <div className="progress-header__text col-sm-9">Computer Science (Diploma)</div>
+                        <div className="progress-header__text col-sm-9">Computer Science (College)</div>
                     </div>
                     <div className="col-sm-12 row">
                         <div className="progress-header__icon col-sm-1">

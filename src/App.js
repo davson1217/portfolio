@@ -1,11 +1,20 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faAt, faLocationDot } from '@fortawesome/free-solid-svg-icons'
-import {faLinkedin, faMedium} from '@fortawesome/free-brands-svg-icons'
+import {
+    faPhone,
+    faAt,
+    faLocationDot,
+} from '@fortawesome/free-solid-svg-icons'
+import {
+    faLinkedin,
+    faMedium,
+} from '@fortawesome/free-brands-svg-icons'
 import SectionHeader from "./components/section-header";
 import WhatIDo from "./components/what-i-do-list";
 import ProgressCard from "./components/progress-card";
 import Education from "./components/education";
+import Skills from "./components/skills";
+import MyPortfolio from "./components/my-portfolio";
 
 function App() {
 
@@ -70,25 +79,30 @@ function App() {
            <div className="col-sm-12 spacer"></div>
 
            <section className="work-xp">
-               <SectionHeader title={"My Work Experience"} classNames={['work-xp__header']}/>
+               <SectionHeader title={"Work Experience"} classNames={['work-xp__header']}/>
                <ProgressCard/>
            </section>
 
            <div className="col-sm-12 spacer"></div>
            <section className="my-education">
-               <SectionHeader title={"My Education"} classNames={['education__header']}/>
+               <SectionHeader title={"Education"} classNames={['education__header']}/>
                <Education/>
            </section>
 
            <div className="col-sm-12 spacer"></div>
-           <section className="my-portfolio">
-               <SectionHeader title={"My Portfolio"} classNames={['portfolio__header']}/>
+           <section className="my-skills">
+               <SectionHeader title={"Skills"} classNames={['portfolio__header']}/>
+               <Skills/>
            </section>
 
            <div className="col-sm-12 spacer"></div>
-           <section className="my-skills">
-               <SectionHeader title={"My Skills"} classNames={['portfolio__header']}/>
+           <section className="my-portfolio">
+               <SectionHeader title={"Portfolio"} classNames={['portfolio__header']}/>
+               <MyPortfolio/>
            </section>
+
+           <div className="col-sm-12 spacer"></div>
+           <div className="col-sm-12 spacer"></div>
        </div>
     </div>
   );
