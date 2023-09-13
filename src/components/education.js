@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/progress-card.css"
-import {faBook, faBuilding, faCalendar, faCode, faSchool} from "@fortawesome/free-solid-svg-icons";
+import {faBook, faCalendar, faSchool} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Education = () => {

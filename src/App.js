@@ -15,6 +15,7 @@ import ProgressCard from "./components/progress-card";
 import Education from "./components/education";
 import Skills from "./components/skills";
 import MyPortfolio from "./components/my-portfolio";
+import CvDownloadButton from "./components/cv-download-button";
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
 
            <section className="row bio-data">
                <div className="col-sm-12 col-lg-4 image-container">
-                   <img src={process.env.PUBLIC_URL + 'me1.jpg'} alt="profile photo" className="img-fluid d-block"/>
+                   <img src={process.env.PUBLIC_URL + 'me1.jpg'} alt="profile" className="img-fluid d-block"/>
                </div>
                <div className="col-sm-12 col-lg-8 personal-container">
                    <h5 className="greeting-header text-sm-center">Hello and welcome 👋🏼</h5>
@@ -44,7 +45,7 @@ function App() {
                            </li>
                            <li className="personal-data-item-3 col-sm-6 col-lg-4 row mt-3">
                                <div className="col-sm-1"><FontAwesomeIcon icon={faLinkedin} color='turquoise'/></div>
-                               <div className="col-sm-10"><a href="https://www.linkedin.com/in/david-olurebi-50894b121/" target="_blank">David Olurebi</a></div>
+                               <div className="col-sm-10"><a href="https://www.linkedin.com/in/david-olurebi-50894b121/" target="_blank" rel={"noreferrer"}>David Olurebi</a></div>
                            </li>
                            <li className="personal-data-item-4 col-sm-6 col-lg-4 row mt-3">
                                <div className="col-sm-1"><FontAwesomeIcon icon={faLocationDot} color='turquoise'/></div>
@@ -52,11 +53,11 @@ function App() {
                            </li>
                            <li className="personal-data-item-4 col-sm-6 col-lg-4 row mt-3">
                                <div className="col-sm-1"><FontAwesomeIcon icon={faMedium} color='turquoise'/></div>
-                               <div className="col-sm-10"><a href="https://medium.com/@olurebidavid" target="_blank">David Olurebi</a></div>
+                               <div className="col-sm-10"><a href="https://medium.com/@olurebidavid" target="_blank" rel={"noreferrer"}>David Olurebi</a></div>
                            </li>
                        </ul>
-                       <div className="col-sm-12 text-center p-5">
-                           <div className="bg-success cv-download-btn p-1" style={{width: "200px", cursor: "pointer"}}>Download My CV</div>
+                       <div className="col-sm-12 download-btn-wrp">
+                           <CvDownloadButton/>
                        </div>
                    </div>
                </div>

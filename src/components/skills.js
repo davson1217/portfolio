@@ -10,7 +10,7 @@ import {
     faPython,
     faReact
 } from "@fortawesome/free-brands-svg-icons";
-import {faDatabase, faFlask, faGear, faLanguage, faLeaf, faLock, faVoicemail} from "@fortawesome/free-solid-svg-icons";
+import {faDatabase, faFlask, faGear, faLanguage, faLeaf, faLock} from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
     return (

@@ -24,3 +24,12 @@
 .spacer.mini {
     margin: 15px 0;
 }
+
+.personal-data .download-btn-wrp {
+    /*background-color: red;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}

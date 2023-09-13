@@ -1,0 +1,9 @@
+.cv-download-btn {
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+}
+
+.cv-download-btn:hover {
+    transform: scale(1.1);
+}
