@@ -9,7 +9,6 @@ import {
     faWindowMaximize
 } from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faNfcDirectional} from "@fortawesome/free-brands-svg-icons/faNfcDirectional";
 
 const WhatIDo = () => {
     return (
@@ -25,11 +24,6 @@ const WhatIDo = () => {
             </li>
 
             <li className="what-item-1 col-sm-12 col-md-6 col-lg-4 mb-4 row">
-                <div className="what-i-do-icon col-sm-2"><FontAwesomeIcon icon={faNfcDirectional} color='turquoise' size={"2x"}/></div>
-                <div className="what-i-do-title col-sm-8">IPC Mechanisms</div>
-            </li>
-
-            <li className="what-item-1 col-sm-12 col-md-6 col-lg-4 mb-4 row">
                 <div className="what-i-do-icon col-sm-2"><FontAwesomeIcon icon={faWindowMaximize} color='turquoise' size={"2x"}/></div>
                 <div className="what-i-do-title col-sm-8">Frontend Web Development</div>
             </li>
@@ -40,13 +34,13 @@ const WhatIDo = () => {
             </li>
 
             <li className="what-item-1 col-sm-12 col-md-6 col-lg-4 mb-4 row">
-                <div className="what-i-do-icon col-sm-2"><FontAwesomeIcon icon={faPen} color='turquoise' size={"2x"}/></div>
-                <div className="what-i-do-title col-sm-8">Technical Writing</div>
+                <div className="what-i-do-icon col-sm-2"><FontAwesomeIcon icon={faGear} color='turquoise' size={"2x"}/></div>
+                <div className="what-i-do-title col-sm-8">Machine Learning</div>
             </li>
 
             <li className="what-item-1 col-sm-12 col-md-6 col-lg-4 mb-4 row">
-                <div className="what-i-do-icon col-sm-2"><FontAwesomeIcon icon={faGear} color='turquoise' size={"2x"}/></div>
-                <div className="what-i-do-title col-sm-8">Machine Learning</div>
+                <div className="what-i-do-icon col-sm-2"><FontAwesomeIcon icon={faPen} color='turquoise' size={"2x"}/></div>
+                <div className="what-i-do-title col-sm-8">Writing</div>
             </li>
 
             <li className="what-item-1 col-sm-12 col-md-6 col-lg-4 mb-4 row">

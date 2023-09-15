@@ -10,7 +10,16 @@ import {
     faPython,
     faReact
 } from "@fortawesome/free-brands-svg-icons";
-import {faDatabase, faFlask, faGear, faLanguage, faLeaf, faLock} from "@fortawesome/free-solid-svg-icons";
+import {
+    faComputer,
+    faDatabase,
+    faFlask,
+    faGear,
+    faLanguage,
+    faLeaf,
+    faLock,
+    faMicroscope
+} from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
     return (
@@ -91,6 +100,14 @@ const Skills = () => {
 
             <ul className="col-sm-12 col-md-6 col-lg-4 row">
                 <div className="skill-list-header col-sm-12 mb-3">Other</div>
+                <li className="skill col-sm-12 row">
+                    <div className="col-sm-1 skill-icon"><FontAwesomeIcon icon={faGear} color='turquoise'/></div>
+                    <div className="col-sm-10 skill-title">Webpack</div>
+                </li>
+                <li className="skill col-sm-12 row">
+                    <div className="col-sm-1 skill-icon"><FontAwesomeIcon icon={faComputer} color='turquoise'/></div>
+                    <div className="col-sm-10 skill-title">Object-oriented Programming</div>
+                </li>
                 <li className="skill col-sm-12 row">
                     <div className="col-sm-1 skill-icon"><FontAwesomeIcon icon={faGithub} color='turquoise'/></div>
                     <div className="col-sm-10 skill-title">Git</div>

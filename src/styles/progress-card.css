@@ -1,5 +1,5 @@
 .progress {
-    height: 200px;
+    height: 400px;
     width: 380px;
     background-color: black;
     border: 2px solid turquoise;
@@ -8,4 +8,7 @@
 .progress-header {
     padding: 5px;
     margin: 0;
+}
+.progress-description {
+    font-size: 13px;
 }

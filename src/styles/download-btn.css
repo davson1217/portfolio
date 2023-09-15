@@ -1,5 +1,7 @@
 .cv-download-btn {
     text-align: center;
+    text-decoration: none;
+    color: white;
     cursor: pointer;
     width: 150px;
 }

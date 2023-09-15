@@ -28,9 +28,9 @@ function App() {
                    <img src={process.env.PUBLIC_URL + 'me1.jpg'} alt="profile" className="img-fluid d-block"/>
                </div>
                <div className="col-sm-12 col-lg-8 personal-container">
-                   <h5 className="greeting-header text-sm-center">Hello and welcome 👋🏼</h5>
+                   <h5 className="greeting-header text-sm-center">Hello and welcome 👋🏼,</h5>
                    <div className="col-sm-12 spacer mini"></div>
-                   <h1 className="text-sm-center">I am <span className="my-name">David Olurebi</span></h1>
+                   <h1 className="text-sm-center">I am <span className="my-name">David Olurebi</span>.</h1>
                    <hr/>
                    <div className="personal-data row">
                        <div className="col-sm-12 spacer mini"></div>
@@ -64,13 +64,11 @@ function App() {
            </section>
 
            <div className="col-sm-12 spacer"></div>
-
            <section className="about-me text-center">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-               nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-               anim id est laborum.
+               At my core, I am defined by resilience, unwavering persistence, and an unyielding sense of dependability —
+               traits of which are the driving force behind my commitment to getting the job done, ensuring that I never shy away from my responsibilities.
+               Speaking of duties, I strongly align with the agile software development school of thought that champions consistent delivery of working software
+               as the primary measure of progress, a result-oriented ideology that carries an undertone of user satisfaction.
            </section>
 
            <div className="col-sm-12 spacer"></div>
