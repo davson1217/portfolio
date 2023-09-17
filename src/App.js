@@ -13,7 +13,6 @@ import Skills from "./components/skills";
 import MyPortfolio from "./components/my-portfolio";
 import CvDownloadButton from "./components/cv-download-button";
 import profile from "./db";
-import ProjectModal from "./components/modal";
 
 function App() {
   return (

@@ -3,7 +3,12 @@ import "../styles/project-modal.css";
 
 const ProjectModal = ({ setShow, project }) => {
   const ProjectLink = ({ title, link }) => (
-    <a href={link} target="_blank" className="col-sm-6 project-link">
+    <a
+      href={link}
+      target="_blank"
+      className="col-sm-6 project-link"
+      rel="noreferrer"
+    >
       {title}
     </a>
   );
