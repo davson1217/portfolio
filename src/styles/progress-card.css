@@ -1,6 +1,8 @@
 .progress {
-    height: 400px;
+    height: auto;
+    display: block;
     width: 380px;
+    font-size: 14px;
     background-color: black;
     border: 2px solid turquoise;
     margin: 5px 10px;
@@ -9,6 +11,9 @@
     padding: 5px;
     margin: 0;
 }
+.progress-header .progress-header-item{
+    margin-bottom: 3px;
+}
 .progress-description {
-    font-size: 13px;
+    font-size: 14px;
 }

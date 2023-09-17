@@ -1,50 +1,73 @@
 import {
-  faBuilding, faCalendar,
+  faBook,
+  faBuilding,
+  faCalendar,
   faCode,
-  faDatabase, faGamepad,
-  faGear, faPen, faPersonWalking,
+  faComputer,
+  faDatabase,
+  faFlask,
+  faGamepad,
+  faGear,
+  faLanguage,
+  faLeaf,
+  faLock,
+  faPen,
+  faPersonWalking,
+  faSchool,
   faServer,
   faSquarePersonConfined,
-  faWindowMaximize
+  faWindowMaximize,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCss3,
+  faDocker,
+  faGithub,
+  faHtml5,
+  faJs,
+  faLaravel,
+  faNodeJs,
+  faPython,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
 
-export const profile = {
-  about_me: "At my core, I am defined by resilience, unwavering persistence, and an unyielding sense of dependability —\n" +
-      "              traits of which are the driving force behind my commitment to getting the job done, ensuring that I never shy away from my responsibilities.\n" +
-      "               Speaking of duties, I strongly align with the agile software development school of thought that champions consistent delivery of working software\n" +
-      "               as the primary measure of progress, a result-oriented ideology that carries an undertone of user satisfaction.",
+const profile = {
+  about_me:
+    "At my core, I am defined by resilience, unwavering persistence, and an unyielding sense of dependability —\n" +
+    "              traits of which are the driving force behind my commitment to getting the job done, ensuring that I never shy away from my responsibilities.\n" +
+    "               Speaking of duties, I strongly align with the agile software development school of thought that champions consistent delivery of working software\n" +
+    "               as the primary measure of progress, a result-oriented ideology that carries an undertone of user satisfaction.",
   what_i_do: [
     {
       icon: faDatabase,
-      title: "Database Design"
+      title: "Database Design",
     },
     {
       icon: faSquarePersonConfined,
-      title: "UX Design"
+      title: "UX Design",
     },
     {
       icon: faWindowMaximize,
-      title: "Frontend Web Development"
+      title: "Frontend Web Development",
     },
     {
       icon: faServer,
-      title: "Server Development"
+      title: "Server Development",
     },
     {
       icon: faGear,
-      title: "Machine Learning"
+      title: "Machine Learning",
     },
     {
       icon: faPen,
-      title: "Writing"
+      title: "Writing",
     },
     {
       icon: faPersonWalking,
-      title: "Sports"
+      title: "Sports",
     },
     {
       icon: faGamepad,
-      title: "Video Games"
+      title: "Video Games",
     },
   ],
   work_experience: [
@@ -55,53 +78,55 @@ export const profile = {
       organisation_name: "Kickertech UAB",
       experience_duration_icon: faCalendar,
       experience_duration: "July 2022 - Present",
-      experience_description: "My duties at Kickertech, a spinoff of TGLAB and subsidiary company of Betsson Group, includes:",
+      has_description: true,
+      experience_description:
+        "My duties at Kickertech, a spinoff of TGLAB and subsidiary company of Betsson Group, includes:",
       duties: [
         {
-          duty_title: "Frontend Development",
-          duty_experiences: [
+          title: "Frontend Development",
+          experiences: [
             {
-              duty_xp: "Same duties as described in my TGLab experience."
-            }
-          ]
+              xp: "Same duties as described in my TGLab experience.",
+            },
+          ],
         },
         {
-          duty_title: "Backend Development",
-          duty_experiences: [
+          title: "Backend Development",
+          experiences: [
             {
-              duty_xp: "ExpressJs (NodeJs)",
+              xp: "ExpressJs (NodeJs)",
             },
             {
-              duty_xp: "MVC architecture",
+              xp: "MVC architecture",
             },
             {
-              duty_xp: "MySql, MongoDB, Prisma ORM",
+              xp: "MySql, MongoDB, Prisma ORM",
             },
-          ]
+          ],
         },
         {
-          duty_title: "Microservice",
-          duty_experiences: [
+          title: "Microservice",
+          experiences: [
             {
-              duty_xp: "REST API",
+              xp: "REST API",
             },
             {
-              duty_xp: "RabbitMQ",
+              xp: "RabbitMQ",
             },
             {
-              duty_xp: "Docker",
+              xp: "Docker",
             },
-          ]
+          ],
         },
         {
-          duty_title: "Team/Customer Consultation",
-          duty_experiences: [
+          title: "Team/Customer Consultation",
+          experiences: [
             {
-              duty_xp: "Sync-up meetings",
-            }
-          ]
-        }
-      ]
+              xp: "Sync-up meetings",
+            },
+          ],
+        },
+      ],
     },
 
     {
@@ -111,31 +136,35 @@ export const profile = {
       organisation_name: "TGLab UAB",
       experience_duration_icon: faCalendar,
       experience_duration: "November 2021 - July 2022",
-      experience_description: " Worked in a multidisciplinary agile team building a B2B iGaming product:",
+      has_description: true,
+      experience_description:
+        " Worked in a multidisciplinary agile team building a B2B iGaming product:",
       duties: [
         {
-          duty_title: "Frontend Development",
-          duty_experiences: [
-            {duty_xp: "Building and maintenance of responsive modularised components"},
-            {duty_xp: "ReactJs"},
-            {duty_xp: "Redux"},
-            {duty_xp: "React Router"},
-            {duty_xp: "Websocket Client"},
-            {duty_xp: "Redux dev tools"},
-          ]
+          title: "Frontend Development",
+          experiences: [
+            {
+              xp: "Building and maintenance of responsive modularised components",
+            },
+            { xp: "ReactJs" },
+            { xp: "Redux" },
+            { xp: "React Router" },
+            { xp: "Websocket Client" },
+            { xp: "Redux dev tools" },
+          ],
         },
         {
-          duty_title: "Customer Consultation",
-          duty_experiences: [
+          title: "Customer Consultation",
+          experiences: [
             {
-              duty_xp: "End-to-end communication and documentation of a feature in pipeline",
+              xp: "End-to-end communication and documentation of a feature in pipeline",
             },
             {
-              duty_xp: "Planning",
-            }
-          ]
-        }
-      ]
+              xp: "Planning",
+            },
+          ],
+        },
+      ],
     },
 
     {
@@ -145,33 +174,208 @@ export const profile = {
       organisation_name: "Glospace Logistics",
       experience_duration_icon: faCalendar,
       experience_duration: "September 2019 - August 2021",
-      experience_description: "                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\n" +
-          "                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex\n" +
-          "                    ea commodo consequat.",
+      has_description: true,
+      experience_description: "Glospace working experience",
       duties: [
         {
-          duty_title: "Frontend Development",
-          duty_experiences: [
-            {duty_xp: "Building and maintenance of responsive modularised components"},
-            {duty_xp: "ReactJs"},
-            {duty_xp: "Redux"},
-            {duty_xp: "React Router"},
-            {duty_xp: "Websocket Client"},
-            {duty_xp: "Redux dev tools"},
-          ]
+          title: "Frontend Development",
+          experiences: [
+            {
+              xp: "Building and maintenance of responsive modularised components",
+            },
+            { xp: "ReactJs" },
+            { xp: "Redux" },
+            { xp: "React Router" },
+            { xp: "Websocket Client" },
+            { xp: "Redux dev tools" },
+          ],
         },
         {
-          duty_title: "Customer Consultation",
-          duty_experiences: [
+          title: "Customer Consultation",
+          experiences: [
             {
-              duty_xp: "End-to-end communication and documentation of a feature in pipeline",
+              xp: "End-to-end communication and documentation of a feature in pipeline",
             },
             {
-              duty_xp: "Planning",
-            }
-          ]
-        }
-      ]
+              xp: "Planning",
+            },
+          ],
+        },
+      ],
     },
-  ]
-}
+  ],
+  education: [
+    {
+      role_icon: faBook,
+      role_title: "Informatics (M.sc)",
+      organisation_icon: faSchool,
+      organisation_name: "Vilnius University, Lithuania",
+      experience_duration_icon: faCalendar,
+      experience_duration: "September 2021 - June 2023",
+      has_description: false,
+    },
+
+    {
+      role_icon: faBook,
+      role_title: "Informatics (B.sc)",
+      organisation_icon: faSchool,
+      organisation_name: "University of Georgia, Georgia",
+      experience_duration_icon: faCalendar,
+      experience_duration: "September 2016 - July 2020",
+      has_description: false,
+    },
+
+    {
+      role_icon: faBook,
+      role_title: "Computer Science (College)",
+      organisation_icon: faSchool,
+      organisation_name: "Federal Polytechnic Ilaro, Nigeria",
+      experience_duration_icon: faCalendar,
+      experience_duration: "September 2013 - July 2015",
+      has_description: false,
+    },
+  ],
+  skills: [
+    {
+      title: "Languages",
+      is_categorized: true,
+      categories: [
+        {
+          title: "dev",
+          skills: [
+            {
+              skill_icon: faJs,
+              icon_color: "turquoise",
+              skill_title: "JavaScript",
+            },
+            {
+              skill_icon: faPython,
+              icon_color: "turquoise",
+              skill_title: "Python",
+            },
+            {
+              skill_icon: faHtml5,
+              icon_color: "red",
+              skill_title: "HTML5",
+            },
+            {
+              skill_icon: faCss3,
+              icon_color: "turquoise",
+              skill_title: "CSS3",
+            },
+          ],
+        },
+        {
+          title: "spoken",
+          skills: [
+            {
+              skill_icon: faLanguage,
+              icon_color: "turquoise",
+              skill_title: "English",
+            },
+            {
+              skill_icon: faLanguage,
+              icon_color: "turquoise",
+              skill_title: "Yoruba",
+            },
+            {
+              skill_icon: faLanguage,
+              icon_color: "turquoise",
+              skill_title: "Georgian",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Framework/Libraries",
+      is_categorized: false,
+      skills: [
+        {
+          skill_icon: faReact,
+          icon_color: "turquoise",
+          skill_title: "React",
+        },
+        {
+          skill_icon: faReact,
+          icon_color: "purple",
+          skill_title: "Redux",
+        },
+        {
+          skill_icon: faNodeJs,
+          icon_color: "lightblue",
+          skill_title: "ExpressJs",
+        },
+        {
+          skill_icon: faNodeJs,
+          icon_color: "red",
+          skill_title: "NestJs",
+        },
+        {
+          skill_icon: faNodeJs,
+          icon_color: "blue",
+          skill_title: "TypeScript",
+        },
+        {
+          skill_icon: faLaravel,
+          icon_color: "tomato",
+          skill_title: "Laravel",
+        },
+        {
+          skill_icon: faFlask,
+          icon_color: "turquoise",
+          skill_title: "Flask",
+        },
+      ],
+    },
+    {
+      title: "Other",
+      is_categorized: false,
+      skills: [
+        {
+          skill_icon: faGear,
+          icon_color: "turquoise",
+          skill_title: "Webpack",
+        },
+        {
+          skill_icon: faComputer,
+          icon_color: "turquoise",
+          skill_title: "Object-oriented Programming",
+        },
+        {
+          skill_icon: faGithub,
+          icon_color: "turquoise",
+          skill_title: "Git",
+        },
+        {
+          skill_icon: faDocker,
+          icon_color: "lightblue",
+          skill_title: "Docker",
+        },
+        {
+          skill_icon: faDatabase,
+          icon_color: "lightblue",
+          skill_title: "SQL/NoSQL/Embedded DBs",
+        },
+        {
+          skill_icon: faLock,
+          icon_color: "red",
+          skill_title: "OAuth",
+        },
+        {
+          skill_icon: faLeaf,
+          icon_color: "green",
+          skill_title: "Latex",
+        },
+        {
+          skill_icon: faGear,
+          icon_color: "white",
+          skill_title: "SkLearn",
+        },
+      ],
+    },
+  ],
+  portfolio: [],
+};
+
+export default profile;
