@@ -13,6 +13,7 @@ import Skills from "./components/skills";
 import MyPortfolio from "./components/my-portfolio";
 import CvDownloadButton from "./components/cv-download-button";
 import profile from "./db";
+import ProjectModal from "./components/modal";
 
 function App() {
   return (
@@ -147,7 +148,7 @@ function App() {
               "text-md-start",
             ]}
           />
-          <MyPortfolio />
+          <MyPortfolio portfolio={profile.portfolio} />
         </section>
 
         <div className="col-sm-12 spacer"></div>

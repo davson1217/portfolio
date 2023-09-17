@@ -57,7 +57,7 @@ const ProgressCard = ({ progressList }) => {
                       <ul>
                         {duty.experiences.length &&
                           duty.experiences.map((experience, index) => (
-                            <li>{experience.xp}</li>
+                            <li key={index}>{experience.xp}</li>
                           ))}
                       </ul>
                     </li>

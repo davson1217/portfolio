@@ -375,7 +375,43 @@ const profile = {
       ],
     },
   ],
-  portfolio: [],
+  portfolio: [
+    {
+      title: "Digital CV",
+      img: "glass2.jpeg",
+      description:
+        "The website which you currently browse is a data-driven React project and although no" +
+        " API calls were made to retrieve data, I exemplified my database design skill in the form of an " +
+        "embedded JSON database style as well as the integration of data in a React UI in such a way that demonstrates" +
+        " the Don't Repeat Yourself (DRY) principle.",
+      in_this_project: ["React", "Bootstrap", "CSS"],
+      see_code: true,
+      see_project: false,
+      code_link: "https://github.com/davson1217/portfolio",
+      project_link: "CV description",
+    },
+    {
+      title: "Restaurant CMS",
+      img: "glass2.jpeg",
+      description: "CMS description",
+      in_this_project: ["ReactJs", "Bootstrap", "CSS"],
+      link: "",
+    },
+    {
+      title: "Restaurant e-commerce",
+      img: "glass2.jpeg",
+      description: "E-commerce description",
+      in_this_project: ["React", "Bootstrap", "CSS"],
+      link: "",
+    },
+    {
+      title: "Yoruba-Lithuanian Transliteration",
+      img: "glass2.jpeg",
+      description: "Transliteration project description",
+      in_this_project: ["React", "Bootstrap", "CSS"],
+      link: "",
+    },
+  ],
 };
 
 export default profile;
