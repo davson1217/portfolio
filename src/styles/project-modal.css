@@ -52,3 +52,14 @@
     text-decoration: none;
     display: inline-block;
 }
+
+.barcode-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.barcode-wrapper div {
+    border: 1px solid #888888;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}

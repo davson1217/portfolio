@@ -37,6 +37,7 @@ function App() {
             <hr />
             <div className="personal-data row">
               <div className="col-sm-12 spacer mini"></div>
+
               <ul className="col-sm-12 personal-data_list row">
                 <li className="personal-data-item-1 col-sm-6 col-lg-4 row mt-3">
                   <div className="col-sm-1">
@@ -85,6 +86,7 @@ function App() {
                   </div>
                 </li>
               </ul>
+
               <div className="col-sm-12 download-btn-wrp">
                 <CvDownloadButton />
               </div>
@@ -154,6 +156,12 @@ function App() {
         <div className="col-sm-12 spacer"></div>
       </div>
     </div>
+    // <div>
+    //   <img
+    //       alt="Barcode Generator TEC-IT"
+    //       src="https://barcode.tec-it.com/barcode.ashx?data=https://lilac-client.netlify.app/&code=QRCode&translate-esc=on&eclevel=L&clientId=650703aa6d7d64104e441fcf&idNumber=10"
+    //   />
+    // </div>
   );
 }
 

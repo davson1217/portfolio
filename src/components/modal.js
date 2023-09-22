@@ -43,9 +43,42 @@ const ProjectModal = ({ setShow, project }) => {
             <ProjectLink link={project.project_link} title={"See Project"} />
           )}
         </div>
+        {project.barcode_embedded && (
+          <div className="row text-center mt-5">
+            <h6 className="col-sm-12">Scan to see client site</h6>
+            <div className="col-sm-12 col-md-6">
+              <img
+                alt="Barcode Generator TEC-IT"
+                src="https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D6417924cf50e1f02c3e3bd7a%26idNum%3D2&code=QRCode&multiplebarcodes=true&eclevel=L"
+              />
+              <h6 className="p-2">Client with data</h6>
+            </div>
+            <div className="col-sm-12 col-md-6">
+              <img
+                alt="Barcode Generator TEC-IT"
+                src="https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D+650703aa6d7d64104e441fcf%26idNum%3D100&code=QRCode&multiplebarcodes=true&eclevel=L"
+              />
+              <h6 className="p-2">Client with no data</h6>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
 export default ProjectModal;
+
+/*
+          <div className="">
+            {project.barcode_embed.map((barcode, index) => (
+              <div key={index}>
+                <img
+                  alt="Barcode Generator TEC-IT"
+                  src={barcode}
+                  // src="https://barcode.tec-it.com/barcode.ashx?data=Restaurant+e-commerce+Demo.&code=QRCode"
+                />
+              </div>
+            ))}
+          </div>
+* */

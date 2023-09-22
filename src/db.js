@@ -378,7 +378,7 @@ const profile = {
   portfolio: [
     {
       title: "Digital CV",
-      img: "glass2.jpeg",
+      img: "cv.jpeg",
       description:
         "The website which you currently browse is a data-driven React project and although no" +
         " API calls were made to retrieve data, I exemplified my database design skill in the form of an " +
@@ -387,6 +387,8 @@ const profile = {
       in_this_project: ["React", "Bootstrap", "CSS"],
       see_code: true,
       see_project: false,
+      barcode_embedded: false,
+      barcode_embed: [],
       code_link: "https://github.com/davson1217/portfolio",
       project_link: "CV description",
     },
@@ -403,6 +405,8 @@ const profile = {
       ],
       see_code: false,
       see_project: true,
+      barcode_embedded: false,
+      barcode_embed: [],
       code_link: "https://bitbucket.org/david121/bar-cms/src/master/",
       project_link: "https://lilac-cms.netlify.app/",
     },
@@ -411,15 +415,24 @@ const profile = {
       img: "glass2.jpeg",
       description: "",
       in_this_project: ["ReactJs", "Redux", "Typescript"],
-      see_code: false,
-      see_project: true,
+      see_code: true,
+      see_project: false,
+      barcode_embedded: true,
+      barcode_embed: [
+        "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D6417924cf50e1f02c3e3bd7a%26idNum%3D2&code=QRCode&multiplebarcodes=true&eclevel=L",
+        "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D650703aa6d7d64104e441fcf%26idNum%3D100&code=QRCode&multiplebarcodes=true&eclevel=L",
+      ],
       code_link: "https://bitbucket.org/david121/bar-client/src/main/",
       project_link: "https://lilac-client.netlify.app/",
     },
     {
       title: "Yoruba-Lithuanian Transliteration",
-      img: "glass2.jpeg",
-      description: "Transliteration project description",
+      img: "mt.png",
+      description:
+        "This is a project done as part of my master's research work on algorithms for transliterating Yoruba proper nouns " +
+        " into Lithuanian language. In this work, different Natural Language Processing techniques applicable to other languages were  " +
+        "utilized including but not limited to data pre-processing and alignment, syllabification, Decision Tree model training and " +
+        "tree visualization. I make available access to project's UI and part of the Python code.",
       in_this_project: [
         "Javascript",
         "Python",
@@ -430,6 +443,8 @@ const profile = {
       ],
       see_code: true,
       see_project: true,
+      barcode_embedded: false,
+      barcode_embed: [],
       code_link: "https://github.com/davson1217/CART",
       project_link:
         "https://yoruba-lithuanian-adaptation.000webhostapp.com/vu/",
