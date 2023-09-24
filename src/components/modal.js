@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/project-modal.css";
+import { useWindowSize } from "../helper/helpers";
 
 const ProjectModal = ({ setShow, project }) => {
+  const isMobile = useWindowSize().width < 760;
   const ProjectLink = ({ title, link }) => (
     <a
       href={link}
@@ -15,7 +17,10 @@ const ProjectModal = ({ setShow, project }) => {
 
   return (
     <div id="myModal" className="modal" onClick={() => setShow(false)}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <div
+        className={`modal-content ${isMobile ? "mobile" : ""}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="row">
           <h5 className="col-sm-10">{project.title}</h5>
           <span className="close col-sm-2" onClick={() => setShow(false)}>
