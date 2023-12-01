@@ -5,7 +5,7 @@ import {
   faAt,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import SectionHeader from "./components/section-header";
 import WhatIDo from "./components/what-i-do-list";
 import ProgressCard from "./components/progress-card";
