@@ -71,7 +71,7 @@ function App() {
                   </div>
                   <div className="col-sm-10">Vilnius, Lithuania</div>
                 </li>
-                <li className="personal-data-item-4 col-sm-6 col-lg-4 row mt-3">
+                {/*<li className="personal-data-item-4 col-sm-6 col-lg-4 row mt-3">
                   <div className="col-sm-1">
                     <FontAwesomeIcon icon={faMedium} color="turquoise" />
                   </div>
@@ -84,7 +84,7 @@ function App() {
                       David Olurebi
                     </a>
                   </div>
-                </li>
+                </li>*/}
               </ul>
 
               <div className="col-sm-12 download-btn-wrp">

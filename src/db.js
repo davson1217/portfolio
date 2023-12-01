@@ -175,29 +175,45 @@ const profile = {
       experience_duration_icon: faCalendar,
       experience_duration: "September 2019 - August 2021",
       has_description: true,
-      experience_description: "Glospace working experience",
+      experience_description:
+        "Contracted to build a logistics and shipment tracking system from the grounds up.",
       duties: [
+        {
+          title: "Database Design",
+          experiences: [
+            {
+              xp: "Relational database design.",
+            },
+            { xp: "Data migration implementation" },
+          ],
+        },
         {
           title: "Frontend Development",
           experiences: [
             {
-              xp: "Building and maintenance of responsive modularised components",
+              xp: "React Ecosystem",
             },
-            { xp: "ReactJs" },
-            { xp: "Redux" },
-            { xp: "React Router" },
-            { xp: "Websocket Client" },
-            { xp: "Redux dev tools" },
           ],
         },
         {
-          title: "Customer Consultation",
+          title: "Backend Development",
           experiences: [
             {
-              xp: "End-to-end communication and documentation of a feature in pipeline",
+              xp: "PHP/Laravel",
             },
             {
-              xp: "Planning",
+              xp: "Blade template engine for email",
+            },
+            {
+              xp: "Implementation of an email system",
+            },
+          ],
+        },
+        {
+          title: "Maintenance",
+          experiences: [
+            {
+              xp: "Maintenance of the project's total stack",
             },
           ],
         },
@@ -395,7 +411,24 @@ const profile = {
     {
       title: "Restaurant CMS",
       img: "glass2.jpeg",
-      description: "",
+      description:
+        "This content management system project is part of a series project titled 'Bar' built on a microservice architecture." +
+        " In the CMS, a user is able to make CRUD operations on their product including file (image) upload, create different languages a " +
+        "product can be represented in, as well as currencies. " +
+        "<ul>" +
+        "<li>Demo User 1 (This user has existing data)" +
+        "<ul>" +
+        "   <li>username: demo1@demo.com</li>" +
+        "   <li>password: demoPassword1</li>" +
+        "</ul>" +
+        "</li>" +
+        "<li>Demo User 2 (This user has no data)" +
+        "<ul>" +
+        "   <li>username: demo2@demo.com</li>" +
+        "   <li>password: demoPassword2</li>" +
+        "</ul>" +
+        "</li>" +
+        "</ul>",
       in_this_project: [
         "ReactJs",
         "Redux",
@@ -403,7 +436,7 @@ const profile = {
         "Styled Components",
         "OAuth",
       ],
-      see_code: false,
+      see_code: true,
       see_project: true,
       barcode_embedded: false,
       barcode_embed: [],
@@ -411,16 +444,18 @@ const profile = {
       project_link: "https://lilac-cms.netlify.app/",
     },
     {
-      title: "Restaurant e-commerce",
+      title: "Restaurant client",
       img: "glass2.jpeg",
-      description: "",
+      description:
+        "This project is the client side of the 'Bar' system where customers are able to browse available products in " +
+        "a restaurant and add desired items into a cart. Below are barcodes belonging to each of the users given earlier in the CMS project",
       in_this_project: ["ReactJs", "Redux", "Typescript"],
       see_code: true,
       see_project: false,
       barcode_embedded: true,
       barcode_embed: [
-        "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D6417924cf50e1f02c3e3bd7a%26idNum%3D2&code=QRCode&multiplebarcodes=true&eclevel=L",
-        "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D650703aa6d7d64104e441fcf%26idNum%3D100&code=QRCode&multiplebarcodes=true&eclevel=L",
+        // "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D6417924cf50e1f02c3e3bd7a%26idNum%3D2&code=QRCode&multiplebarcodes=true&eclevel=L",
+        // "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D650703aa6d7d64104e441fcf%26idNum%3D100&code=QRCode&multiplebarcodes=true&eclevel=L",
       ],
       code_link: "https://bitbucket.org/david121/bar-client/src/main/",
       project_link: "https://lilac-client.netlify.app/",

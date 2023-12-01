@@ -1,9 +1,12 @@
 import React from "react";
 import "../styles/project-modal.css";
 import { useWindowSize } from "../helper/helpers";
+import DOMPurify from "dompurify";
 
 const ProjectModal = ({ setShow, project }) => {
   const isMobile = useWindowSize().width < 760;
+  const cleanDescription = DOMPurify.sanitize(project.description);
+
   const ProjectLink = ({ title, link }) => (
     <a
       href={link}
@@ -28,7 +31,10 @@ const ProjectModal = ({ setShow, project }) => {
           </span>
         </div>
         <div className="mt-3">
-          {project.description}
+          <p
+            dangerouslySetInnerHTML={{ __html: cleanDescription }}
+            className="project-description"
+          ></p>
           <ul className="techs-used m-2">
             <b>
               <u>In this project</u>
@@ -53,15 +59,19 @@ const ProjectModal = ({ setShow, project }) => {
             <h6 className="col-sm-12">Scan to see client site</h6>
             <div className="col-sm-12 col-md-6">
               <img
-                alt="Barcode Generator TEC-IT"
-                src="https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D6417924cf50e1f02c3e3bd7a%26idNum%3D2&code=QRCode&multiplebarcodes=true&eclevel=L"
+                alt="user without data"
+                src={process.env.PUBLIC_URL + "demouser1_with_data.png"}
+                height={150}
+                width={150}
               />
               <h6 className="p-2">Client with data</h6>
             </div>
             <div className="col-sm-12 col-md-6">
               <img
-                alt="Barcode Generator TEC-IT"
-                src="https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D+650703aa6d7d64104e441fcf%26idNum%3D100&code=QRCode&multiplebarcodes=true&eclevel=L"
+                alt="user with data"
+                src={process.env.PUBLIC_URL + "demoUser2_noData.png"}
+                height={150}
+                width={150}
               />
               <h6 className="p-2">Client with no data</h6>
             </div>
