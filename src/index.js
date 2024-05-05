@@ -11,6 +11,7 @@ root.render(
         width: "100%",
         textAlign: "center",
         height: "80vh",
+        color: "#07ffff",
         justifyContent: "center",
         alignContent: "center",
       }}
