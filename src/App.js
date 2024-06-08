@@ -1,10 +1,6 @@
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPhone,
-  faAt,
-  faLocationDot,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAt, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
