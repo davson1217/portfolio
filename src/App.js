@@ -5,7 +5,11 @@ import {
   faAt,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons";
 import SectionHeader from "./components/section-header";
 import WhatIDo from "./components/what-i-do-list";
 import ProgressCard from "./components/progress-card";
@@ -39,17 +43,25 @@ function App() {
               <div className="col-sm-12 spacer mini"></div>
 
               <ul className="col-sm-12 personal-data_list row">
-                <li className="personal-data-item-1 col-sm-6 col-lg-4 row mt-3">
-                  <div className="col-sm-1">
-                    <FontAwesomeIcon icon={faPhone} color="turquoise" />{" "}
-                  </div>
-                  <div className="col-sm-10">+37069236033</div>
-                </li>
                 <li className="personal-data-item-2 col-sm-6 col-lg-4 row mt-3">
                   <div className="col-sm-1">
                     <FontAwesomeIcon icon={faAt} color="turquoise" />
                   </div>
                   <div className="col-sm-10">olurebidavid@gmail.com</div>
+                </li>
+                <li className="personal-data-item-2 col-sm-6 col-lg-4 row mt-3">
+                  <div className="col-sm-1">
+                    <FontAwesomeIcon icon={faGithub} color="turquoise" />
+                  </div>
+                  <div className="col-sm-10">
+                    <a
+                      href="https://github.com/davson1217?tab=repositories"
+                      target="_blank"
+                      rel={"noreferrer"}
+                    >
+                      Github
+                    </a>
+                  </div>
                 </li>
                 <li className="personal-data-item-3 col-sm-6 col-lg-4 row mt-3">
                   <div className="col-sm-1">
@@ -67,12 +79,6 @@ function App() {
                 </li>
                 <li className="personal-data-item-4 col-sm-6 col-lg-4 row mt-3">
                   <div className="col-sm-1">
-                    <FontAwesomeIcon icon={faLocationDot} color="turquoise" />
-                  </div>
-                  <div className="col-sm-10">Vilnius, Lithuania</div>
-                </li>
-                {/*<li className="personal-data-item-4 col-sm-6 col-lg-4 row mt-3">
-                  <div className="col-sm-1">
                     <FontAwesomeIcon icon={faMedium} color="turquoise" />
                   </div>
                   <div className="col-sm-10">
@@ -84,7 +90,13 @@ function App() {
                       David Olurebi
                     </a>
                   </div>
-                </li>*/}
+                </li>
+                <li className="personal-data-item-4 col-sm-6 col-lg-4 row mt-3">
+                  <div className="col-sm-1">
+                    <FontAwesomeIcon icon={faLocationDot} color="turquoise" />
+                  </div>
+                  <div className="col-sm-10">Vilnius, Lithuania</div>
+                </li>
               </ul>
 
               <div className="col-sm-12 download-btn-wrp">
@@ -149,7 +161,7 @@ function App() {
               "text-md-start",
             ]}
           />
-          <MyPortfolio portfolio={profile.portfolio} />
+          <MyPortfolio portfolio={profile.projects} />
         </section>
 
         <div className="col-sm-12 spacer"></div>

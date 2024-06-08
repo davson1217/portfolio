@@ -10,7 +10,6 @@ import {
   faGear,
   faLanguage,
   faLeaf,
-  faLock,
   faPen,
   faPersonWalking,
   faSchool,
@@ -19,15 +18,15 @@ import {
   faWindowMaximize,
 } from "@fortawesome/free-solid-svg-icons";
 import {
-  faCss3,
   faDocker,
   faGithub,
-  faHtml5,
   faJs,
   faLaravel,
   faNodeJs,
+  faPhp,
   faPython,
   faReact,
+  faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
 
 const profile = {
@@ -86,7 +85,7 @@ const profile = {
           title: "Frontend Development",
           experiences: [
             {
-              xp: "Same duties as described in my TGLab experience.",
+              xp: "Similar duties as described in my TGLab experience.",
             },
           ],
         },
@@ -94,18 +93,18 @@ const profile = {
           title: "Backend Development",
           experiences: [
             {
-              xp: "ExpressJs (NodeJs)",
+              xp: "Development of API services featuring thousands of events across numerous countries, offering over 1 million odds.",
             },
             {
-              xp: "MVC architecture",
+              xp: "Secured bet placement API services.",
             },
             {
-              xp: "MySql, MongoDB, Prisma ORM",
+              xp: "Refactoring of backend services from plain Javascript to Typescript",
             },
           ],
         },
         {
-          title: "Microservice",
+          title: "Microservice Communication Mechanisms",
           experiences: [
             {
               xp: "REST API",
@@ -114,7 +113,7 @@ const profile = {
               xp: "RabbitMQ",
             },
             {
-              xp: "Docker",
+              xp: "Apache Kafka",
             },
           ],
         },
@@ -128,7 +127,6 @@ const profile = {
         },
       ],
     },
-
     {
       role_icon: faCode,
       role_title: "Frontend Developer",
@@ -138,19 +136,27 @@ const profile = {
       experience_duration: "November 2021 - July 2022",
       has_description: true,
       experience_description:
-        " Worked in a multidisciplinary agile team building a B2B iGaming product:",
+        " Worked in a multidisciplinary agile team building a B2B iGaming product.",
       duties: [
         {
           title: "Frontend Development",
           experiences: [
             {
-              xp: "Building and maintenance of responsive modularised components",
+              xp: "Efficiently manage and display thousands of real-time updates for odds and event parameter in the sportsbook",
             },
-            { xp: "ReactJs" },
-            { xp: "Redux" },
-            { xp: "React Router" },
-            { xp: "Websocket Client" },
-            { xp: "Redux dev tools" },
+            {
+              xp: "Built 7 mission-critical UI widgets tailored to a client's needs.",
+            },
+            {
+              xp: (
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      "Completely refactored <a href='https://betbonanza.com/sport/todays_soccer' target='_blank' rel='noreferrer' >Betbonanza</a>'s tournament UI to meet its market demands.",
+                  }}
+                />
+              ),
+            },
           ],
         },
         {
@@ -158,9 +164,6 @@ const profile = {
           experiences: [
             {
               xp: "End-to-end communication and documentation of a feature in pipeline",
-            },
-            {
-              xp: "Planning",
             },
           ],
         },
@@ -182,9 +185,16 @@ const profile = {
           title: "Database Design",
           experiences: [
             {
-              xp: "Relational database design.",
+              xp: "Relational DB design for 8 tables.",
             },
-            { xp: "Data migration implementation" },
+            {
+              xp: "Digital invoice development",
+            },
+            {
+              xp: "DB seeding scripts to insert up to 900 records.",
+            },
+            { xp: "Migrations implementation." },
+            { xp: "Content management systems development" },
           ],
         },
         {
@@ -265,19 +275,14 @@ const profile = {
               skill_title: "JavaScript",
             },
             {
+              skill_icon: faPhp,
+              icon_color: "turquoise",
+              skill_title: "PHP",
+            },
+            {
               skill_icon: faPython,
               icon_color: "turquoise",
               skill_title: "Python",
-            },
-            {
-              skill_icon: faHtml5,
-              icon_color: "red",
-              skill_title: "HTML5",
-            },
-            {
-              skill_icon: faCss3,
-              icon_color: "turquoise",
-              skill_title: "CSS3",
             },
           ],
         },
@@ -299,6 +304,11 @@ const profile = {
               icon_color: "turquoise",
               skill_title: "Georgian",
             },
+            {
+              skill_icon: faLanguage,
+              icon_color: "turquoise",
+              skill_title: "Lithuanian",
+            },
           ],
         },
       ],
@@ -308,14 +318,19 @@ const profile = {
       is_categorized: false,
       skills: [
         {
+          skill_icon: faLaravel,
+          icon_color: "tomato",
+          skill_title: "Laravel",
+        },
+        {
           skill_icon: faReact,
           icon_color: "turquoise",
           skill_title: "React",
         },
         {
-          skill_icon: faReact,
+          skill_icon: faVuejs,
           icon_color: "purple",
-          skill_title: "Redux",
+          skill_title: "Vue",
         },
         {
           skill_icon: faNodeJs,
@@ -326,16 +341,6 @@ const profile = {
           skill_icon: faNodeJs,
           icon_color: "red",
           skill_title: "NestJs",
-        },
-        {
-          skill_icon: faNodeJs,
-          icon_color: "blue",
-          skill_title: "TypeScript",
-        },
-        {
-          skill_icon: faLaravel,
-          icon_color: "tomato",
-          skill_title: "Laravel",
         },
         {
           skill_icon: faFlask,
@@ -349,11 +354,6 @@ const profile = {
       is_categorized: false,
       skills: [
         {
-          skill_icon: faGear,
-          icon_color: "turquoise",
-          skill_title: "Webpack",
-        },
-        {
           skill_icon: faComputer,
           icon_color: "turquoise",
           skill_title: "Object-oriented Programming",
@@ -364,19 +364,19 @@ const profile = {
           skill_title: "Git",
         },
         {
-          skill_icon: faDocker,
-          icon_color: "lightblue",
-          skill_title: "Docker",
-        },
-        {
           skill_icon: faDatabase,
           icon_color: "lightblue",
           skill_title: "SQL/NoSQL/Embedded DBs",
         },
         {
-          skill_icon: faLock,
-          icon_color: "red",
-          skill_title: "OAuth",
+          skill_icon: faGear,
+          icon_color: "turquoise",
+          skill_title: "Webpack",
+        },
+        {
+          skill_icon: faDocker,
+          icon_color: "lightblue",
+          skill_title: "Docker",
         },
         {
           skill_icon: faLeaf,
@@ -391,8 +391,23 @@ const profile = {
       ],
     },
   ],
-  portfolio: [
+  projects: [
     {
+      title: "Pet Social Media",
+      img: "cat_dog.webp",
+      description:
+        "This side project spanned a development time of up to 1 year. In the project, I tackled challenges" +
+        "including but not limited to cross-table relationships, complex SQL queries, websockets for instant messaging" +
+        "Mail implementation etc.",
+      in_this_project: ["PHP/Laravel", "Socket.io", "React", "MySQL"],
+      see_code: true,
+      see_project: false,
+      barcode_embedded: false,
+      barcode_embed: [],
+      code_link: "https://bitbucket.org/david121/petbook-project/src/master/",
+      project_link: "Petbook",
+    },
+    /*{
       title: "Digital CV",
       img: "cv.jpeg",
       description:
@@ -459,21 +474,18 @@ const profile = {
       ],
       code_link: "https://bitbucket.org/david121/bar-client/src/main/",
       project_link: "https://lilac-client.netlify.app/",
-    },
+    },*/
     {
       title: "Yoruba-Lithuanian Transliteration",
       img: "mt.png",
       description:
-        "This is a project done as part of my master's research work on algorithms for transliterating Yoruba proper nouns " +
-        " into Lithuanian language. In this work, different Natural Language Processing techniques applicable to other languages were  " +
+        "In this work, different Natural Language Processing techniques applicable to other languages were  " +
         "utilized including but not limited to data pre-processing and alignment, syllabification, Decision Tree model training and " +
-        "tree visualization. I make available access to project's UI and part of the Python code.",
+        "tree visualization.",
       in_this_project: [
         "Javascript",
-        "Python",
-        "Flask",
-        "SKLearn",
-        "CART Machine Learning",
+        "Python/Flask",
+        "SKLearn / CART Machine Learning",
         "Syllabification Algorithm",
       ],
       see_code: true,
