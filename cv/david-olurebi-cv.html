@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Olurebi CV</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0.42in;
+      }
+
+      :root {
+        --ink: #111827;
+        --muted: #4b5563;
+        --rule: #d1d5db;
+        --accent: #0f766e;
+        --panel: #f8fafc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 9.8pt;
+        line-height: 1.34;
+        background: #fff;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .page {
+        max-width: 8.27in;
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 10px;
+        margin-bottom: 14px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 24pt;
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+      }
+
+      .headline {
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 11pt;
+        font-weight: 600;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 16px;
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 9pt;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 2.1fr 1fr;
+        gap: 18px;
+      }
+
+      section {
+        margin-bottom: 12px;
+        break-inside: avoid;
+      }
+
+      h2 {
+        margin: 0 0 6px;
+        color: var(--accent);
+        font-size: 9.2pt;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .summary {
+        font-size: 9.8pt;
+      }
+
+      .item {
+        margin-bottom: 10px;
+      }
+
+      .item:last-child {
+        margin-bottom: 0;
+      }
+
+      .item-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: baseline;
+        margin-bottom: 2px;
+      }
+
+      .role {
+        font-weight: 700;
+        font-size: 10.3pt;
+      }
+
+      .org {
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .date {
+        white-space: nowrap;
+        color: var(--muted);
+        font-size: 8.9pt;
+      }
+
+      ul {
+        margin: 4px 0 0 16px;
+        padding: 0;
+      }
+
+      li {
+        margin: 0 0 3px;
+      }
+
+      .side-block {
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        padding: 8px 10px;
+      }
+
+      .stack {
+        color: var(--muted);
+      }
+
+      .meta-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .meta-list strong {
+        display: block;
+        margin-bottom: 2px;
+        font-size: 8.8pt;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .project-name {
+        font-weight: 700;
+      }
+
+      .small {
+        color: var(--muted);
+        font-size: 8.8pt;
+      }
+
+      @media print {
+        body {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>David Olurebi</h1>
+        <div class="headline">Product-minded Software Engineer</div>
+        <div class="contact">
+          <span>Vilnius, Lithuania</span>
+          <span><a href="mailto:olurebidavid@gmail.com">olurebidavid@gmail.com</a></span>
+          <span><a href="https://davidolurebi.site">davidolurebi.site</a></span>
+          <span><a href="https://www.linkedin.com/in/david-olurebi-50894b121/">LinkedIn</a></span>
+          <span><a href="https://github.com/davson1217?tab=repositories">GitHub</a></span>
+          <span><a href="https://www.credly.com/users/david-adebayo-olurebi/badges#credly">Certifications</a></span>
+        </div>
+      </header>
+
+      <main>
+        <div>
+          <section>
+            <h2>Summary</h2>
+            <p class="summary">
+              Software engineer with strong end-to-end ownership across architecture, delivery, and execution. Experienced across backend services, frontend product development, and internal tooling, with a track record of shipping reliable software in fast-moving environments.
+            </p>
+          </section>
+
+          <section>
+            <h2>Experience</h2>
+
+            <div class="item">
+              <div class="item-head">
+                <div>
+                  <div class="role">Software Engineer (Backend Focus)</div>
+                  <div class="org">Olybet Group</div>
+                </div>
+                <div class="date">Jul 2024 - Present</div>
+              </div>
+              <ul>
+                <li>Own end-to-end delivery of critical platform features, from solution design through implementation and release, while mentoring junior engineers.</li>
+                <li>Build microservice-based integrations between third-party casino providers and the core gaming platform, enabling onboarding of 5,000+ casino games across multiple jurisdictions.</li>
+                <li>Design scalable integration patterns for high-volume partner traffic while maintaining platform stability and regulatory compliance.</li>
+                <li>Define maintainable service boundaries and uphold engineering standards through SOLID design, automated tests, and internal tooling built with Vue and Pinia.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="item-head">
+                <div>
+                  <div class="role">Software Engineer (Frontend Focus)</div>
+                  <div class="org">TGLAB / Kickertech</div>
+                </div>
+                <div class="date">Mar 2021 - Jul 2024</div>
+              </div>
+              <ul>
+                <li>Delivered real-time, client-specific features for a high-scale B2B sportsbook platform across frontend and supporting backend services.</li>
+                <li>Built and optimized React and Redux flows that handled thousands of real-time sportsbook updates, including odds and event data, with strong performance and accuracy requirements.</li>
+                <li>Built modular, mission-critical UI components for brands including Stake and Betsafe, and implemented Memcached, Socket.IO, and RethinkDB-based real-time support services.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="item-head">
+                <div>
+                  <div class="role">Fullstack Developer</div>
+                  <div class="org">Glospace Logistics</div>
+                </div>
+                <div class="date">Sep 2019 - Aug 2021</div>
+              </div>
+              <ul>
+                <li>Contracted to build a logistics and shipment tracking platform from the ground up, including a CMS and related operational workflows.</li>
+                <li>Designed relational database structures for shipment tracking, invoicing, and content-management use cases.</li>
+                <li>Built the frontend in React and Redux, the backend in Laravel, and supporting email workflows, migrations, and operational notifications.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Selected Projects</h2>
+
+            <div class="item">
+              <div class="project-name">Menutender</div>
+              <div class="small">Technical product ownership, microservices, full-stack delivery</div>
+              <ul>
+                <li>Built the product from scratch, then grew it into a small team effort while owning technical direction as scope expanded.</li>
+                <li>Designed a three-service architecture spanning the CMS, customer-facing experience, and backend APIs.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="project-name">Economus</div>
+              <div class="small">Client delivery under Kabiti</div>
+              <ul>
+                <li>Led the modernization of a legacy static website into a data-driven, content-manageable platform.</li>
+                <li>Worked directly with the client from requirements through delivery under my startup, Kabiti.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="project-name">Yoruba-Lithuanian Transliteration</div>
+              <div class="small">NLP, transliteration, applied ML</div>
+              <ul>
+                <li>Built a transliteration system using data preprocessing, alignment, syllabification, and decision tree training.</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <aside>
+          <section class="side-block">
+            <h2>Core Skills</h2>
+            <div class="meta-list">
+              <div>
+                <strong>Languages</strong>
+                <div class="stack">JavaScript, TypeScript, PHP, C#</div>
+              </div>
+              <div>
+                <strong>Frameworks</strong>
+                <div class="stack">Laravel, React, Redux, Vue, Pinia, Express, Nest, .NET</div>
+              </div>
+              <div>
+                <strong>Data & Infra</strong>
+                <div class="stack">MySQL, SQL/NoSQL, MongoDB, Memcached, RethinkDB, Docker, CI/CD</div>
+              </div>
+              <div>
+                <strong>Engineering</strong>
+                <div class="stack">System design, microservices, real-time systems, testing, OOP, design patterns</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="side-block">
+            <h2>Education</h2>
+            <div class="meta-list">
+              <div>
+                <strong>M.Sc. Informatics</strong>
+                <div>Vilnius University, Lithuania</div>
+                <div class="small">2021 - 2023</div>
+              </div>
+              <div>
+                <strong>B.Sc. Informatics</strong>
+                <div>University of Georgia, Georgia</div>
+                <div class="small">2016 - 2020</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="side-block">
+            <h2>Languages</h2>
+            <div class="stack">English, Yoruba, Lithuanian, Georgian</div>
+          </section>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>

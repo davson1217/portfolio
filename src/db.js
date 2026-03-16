@@ -9,7 +9,6 @@ import {
   faGamepad,
   faGear,
   faLanguage,
-  faLeaf,
   faPen,
   faPersonWalking,
   faSchool,
@@ -32,42 +31,33 @@ import {
 
 const profile = {
   about_me:
-    "At my core, I am defined by resilience, unwavering persistence, and an unyielding sense of dependability —\n" +
-    "              traits of which are the driving force behind my commitment to getting the job done, ensuring that I never shy away from my responsibilities.\n" +
-    "               Speaking of duties, I strongly align with the agile software development school of thought that champions consistent delivery of working software\n" +
-    "               as the primary measure of progress, a result-oriented ideology that carries an undertone of user satisfaction.",
+    "I am a product-minded software engineer with strong end-to-end ownership across architecture, delivery, and execution.\n" +
+    "              I work comfortably across frontend and backend systems, with a focus on building reliable software, solving real business problems, and taking responsibility for outcomes.\n" +
+    "               I do my best work in fast-moving environments where initiative, pragmatism, and sound technical judgment matter.",
   what_i_do: [
-    // {
-    //   icon: faDatabase,
-    //   title: "Database Design",
-    // },
-    // {
-    //   icon: faSquarePersonConfined,
-    //   title: "UX Design",
-    // },
-    {
-      icon: faWindowMaximize,
-      title: "Frontend Web Development",
-    },
     {
       icon: faServer,
-      title: "Backend Development",
+      title: "Backend Systems",
+    },
+    {
+      icon: faWindowMaximize,
+      title: "Frontend Product Development",
     },
     {
       icon: faCircleNodes,
-      title: "Design Patterns",
+      title: "System Design",
+    },
+    {
+      icon: faCircleNodes,
+      title: "Microservice Integrations",
+    },
+    {
+      icon: faWindowMaximize,
+      title: "Real-Time Applications",
     },
     {
       icon: faPen,
-      title: "Writing",
-    },
-    {
-      icon: faPersonWalking,
-      title: "Sports",
-    },
-    {
-      icon: faGamepad,
-      title: "Video Games",
+      title: "Technical Product Ownership",
     },
   ],
   work_experience: [
@@ -80,7 +70,7 @@ const profile = {
       experience_duration: "July 2024 - Present",
       has_description: true,
       experience_description:
-        "In this role, I independently own the end-to-end development and delivery of critical features. as well as guiding newer/junior colleagues.",
+        "In this role, I own the end-to-end delivery of critical platform features, from solution design through implementation and release, while also supporting and mentoring junior engineers.",
       duties: [
         {
           title: "Backend Development (Laravel)",
@@ -92,7 +82,7 @@ const profile = {
               xp: "Design scalable integration patterns for high-volume partner traffic while maintaining platform stability and regulatory compliance.",
             },
             {
-              xp: "Apply SOLID principles and write unit and feature tests to improve maintainability and reliability.",
+              xp: "Define maintainable service boundaries and enforce engineering standards through SOLID design, unit tests, and feature tests.",
             },
           ],
         },
@@ -100,7 +90,7 @@ const profile = {
           title: "Frontend Development",
           experiences: [
             {
-              xp: "Building internal tooling features and components with Vue and Pinia.",
+              xp: "Build internal tooling features and components with Vue and Pinia to support operational workflows and team efficiency.",
             },
           ],
         },
@@ -110,25 +100,25 @@ const profile = {
       role_icon: faCode,
       role_title: "Software Engineer (FE Focused)",
       organisation_icon: faBuilding,
-      organisation_name: "Kickertech",
+      organisation_name: "TGLAB/Kickertech",
       experience_duration_icon: faCalendar,
       experience_duration: "March 2021 - July 2024",
       has_description: true,
       experience_description:
-        " Worked in a multidisciplinary agile team building a B2B iGaming product.",
+        "Contributed to a high-scale B2B sportsbook platform, delivering real-time, client-specific features across frontend and supporting backend services.",
       duties: [
         {
           title: "Frontend Development (React/Redux)",
           experiences: [
             {
-              xp: "Managed and rendered thousands of real-time sportsbook updates, including odds and event data, with a focus on performance and accuracy.",
+              xp: "Built and optimized frontend flows that handled thousands of real-time sportsbook updates, including odds and event data, with a strong focus on performance and accuracy.",
             },
             {
               xp: (
                 <div
                   dangerouslySetInnerHTML={{
                     __html:
-                      "Built modular, mission-critical UI components tailored to client needs including <a href='https://stake.com' target='_blank' rel='noreferrer' >Stake</a> and <a href='https://betsson.lt' target='_blank' rel='noreferrer' >Betsafe</a> to name a few.",
+                      "Built modular, mission-critical UI components tailored to client-specific product requirements for brands including <a href='https://stake.com' target='_blank' rel='noreferrer' >Stake</a> and <a href='https://betsson.lt' target='_blank' rel='noreferrer' >Betsafe</a>.",
                   }}
                 />
               ),
@@ -139,13 +129,13 @@ const profile = {
           title: "Backend Development (Express)",
           experiences: [
             {
-              xp: "Implemented event feed caching with Memcached to improve data access performance.",
+              xp: "Implemented Memcached-based event feed caching to improve performance and reduce downstream load.",
             },
             {
-              xp: "Used Socket.IO to deliver real-time updates to the client.",
+              xp: "Built Socket.IO-powered real-time update flows for sportsbook clients.",
             },
             {
-              xp: "Used RethinkDB changefeeds to support database-driven real-time data propagation.",
+              xp: "Used RethinkDB changefeeds to enable database-driven event propagation across services.",
             },
           ],
         },
@@ -160,42 +150,44 @@ const profile = {
       experience_duration: "September 2019 - August 2021",
       has_description: true,
       experience_description:
-        "Contracted to build a logistics and shipment tracking system from the grounds up including a CMS.",
+        "Contracted to build a logistics and shipment tracking platform from the ground up, including a CMS and supporting operational workflows.",
       duties: [
         {
           title: "Database Design",
           experiences: [
             {
-              xp: "Relational DB design.",
+              xp: "Designed the relational database structure that supported shipment tracking, invoicing, and CMS workflows.",
             },
             {
-              xp: "Digital invoice development",
+              xp: "Built digital invoicing capabilities to support business operations.",
             },
             {
-              xp: "DB seeding scripts to insert up to 900 records.",
+              xp: "Created data seeding scripts to initialize and support large record sets during development and rollout.",
             },
-            { xp: "Migrations implementation." },
+            {
+              xp: "Implemented database migrations to support iterative product growth.",
+            },
           ],
         },
         {
           title: "Frontend Development",
           experiences: [
-            { xp: "React" },
-            { xp: "Redux (Legacy)" },
-            { xp: "Bootstrap" },
+            {
+              xp: "Built the frontend application with React, Redux, and Bootstrap to support core logistics and CMS user flows.",
+            },
           ],
         },
         {
           title: "Backend Development",
           experiences: [
             {
-              xp: "PHP/Laravel",
+              xp: "Built backend services in Laravel to power tracking, content management, and internal business operations.",
             },
             {
-              xp: "Blade template engine for email",
+              xp: "Used Blade templating to implement dynamic email workflows.",
             },
             {
-              xp: "Implementation of an email system",
+              xp: "Implemented the project's email system for operational communication and notifications.",
             },
           ],
         },
@@ -203,7 +195,7 @@ const profile = {
           title: "Maintenance",
           experiences: [
             {
-              xp: "Maintenance of the project's total stack",
+              xp: "Maintained the full application stack, taking responsibility for ongoing stability and feature support.",
             },
           ],
         },
@@ -376,9 +368,8 @@ const profile = {
       title: "Economus UAB",
       img: "pg1.webp",
       description:
-        "In this project, I consulted with a client and provided a software development service that included refurbishing of old static website," +
-        "to a data-driven content-manageable website. The project was built under my startup name <a href='https://kabiti.com'>Kabiti</a>.",
-      in_this_project: ["React", "i18", "Express"],
+        "Led the modernization of a legacy static website into a data-driven, content-manageable platform, working directly with the client from requirements through delivery under my startup, <a href='https://kabiti.com'>Kabiti</a>.",
+      in_this_project: ["React", "i18n", "Express"],
       see_code: false,
       see_project: true,
       barcode_embedded: false,
@@ -390,9 +381,9 @@ const profile = {
       title: "Digital Restaurant Menu",
       img: "glass2.jpeg",
       description:
-        " Menutender was a side project that I built from scratch. As the project grew bigger, I added 2 developers to the team and took a technical product ownership role. " +
-        " The project is part of a group of 3 projects built ontop of a microservice architecture." +
-        " For demonstration purposes, you may access the CMS which helps access the customer-facing product as well as interaction with the Express server." +
+        "Built Menutender from scratch and later grew it into a small team effort, where I took technical product ownership as the scope expanded. " +
+        "The platform is part of a three-service microservice architecture spanning the CMS, customer-facing experience, and backend APIs. " +
+        "For demonstration purposes, you can access the CMS and explore how it interacts with the customer-facing product and Express services." +
         "<ul>" +
         "<li>Demo User" +
         "<ul>" +
@@ -416,15 +407,13 @@ const profile = {
       barcode_embedded: false,
       barcode_embed: [],
       code_link: "https://bitbucket.org/david121/bar-cms/src/master/",
-      project_link: "https://lilac-cms.netlify.app/",
+      project_link: "https://admin.menutender.com",
     },
     {
       title: "Pet Social Media",
       img: "cat_dog.webp",
       description:
-        "This side project spanned a development time of up to 1 year. In the project, I tackled challenges" +
-        "including but not limited to cross-table relationships, complex SQL queries, websockets for instant messaging" +
-        "Mail implementation etc.",
+        "Built a social platform for pet owners, solving challenges across relational data modeling, complex SQL querying, real-time messaging, and email-driven user workflows.",
       in_this_project: ["PHP/Laravel", "Socket.io", "React", "MySQL"],
       see_code: true,
       see_project: false,
@@ -471,9 +460,7 @@ const profile = {
       title: "Yoruba-Lithuanian Transliteration",
       img: "mt.png",
       description:
-        "In this work, different Natural Language Processing techniques applicable to other languages were  " +
-        "utilized including but not limited to data pre-processing and alignment, syllabification, Decision Tree model training and " +
-        "tree visualization.",
+        "Built a Yoruba-Lithuanian transliteration system using NLP techniques such as data preprocessing, alignment, syllabification, and decision tree training.",
       in_this_project: [
         "Javascript",
         "Python/Flask",
