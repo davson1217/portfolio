@@ -73,7 +73,7 @@ function App() {
                       target="_blank"
                       rel={"noreferrer"}
                     >
-                      David Olurebi
+                      LinkedIn
                     </a>
                   </div>
                 </li>
@@ -87,7 +87,7 @@ function App() {
                       target="_blank"
                       rel={"noreferrer"}
                     >
-                      David Olurebi
+                      Medium
                     </a>
                   </div>
                 </li>
