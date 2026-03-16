@@ -10,3 +10,11 @@
     text-decoration-color: turquoise;
     text-decoration-thickness: 5px;
 }
+
+@media (max-width: 576px) {
+    .underline-title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 24px !important;
+    }
+}

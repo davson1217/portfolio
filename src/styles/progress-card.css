@@ -1,19 +1,47 @@
 .progress {
     height: auto;
     display: block;
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     font-size: 14px;
     background-color: black;
     border: 2px solid turquoise;
     margin: 5px 10px;
+    padding: 16px 18px;
+    border-radius: 22px;
 }
 .progress-header {
-    padding: 5px;
+    padding: 0;
     margin: 0;
 }
 .progress-header .progress-header-item{
-    margin-bottom: 3px;
+    margin-bottom: 8px;
 }
 .progress-description {
     font-size: 14px;
+}
+
+.progress hr {
+    margin: 14px 0;
+    border-color: rgba(64, 224, 208, 0.25);
+}
+
+@media (max-width: 767px) {
+    .progress {
+        max-width: none;
+        margin: 0 0 14px;
+        padding: 14px 16px;
+    }
+
+    .progress-header__icon,
+    .progress-header__text {
+        width: auto;
+        flex: 0 0 auto;
+        max-width: none;
+    }
+
+    .progress-header__text {
+        flex: 1 1 auto;
+        padding-left: 12px;
+    }
 }

@@ -4,8 +4,24 @@
     color: white;
     cursor: pointer;
     width: 150px;
+    border-radius: 999px;
+    transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .cv-download-btn:hover {
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(25, 135, 84, 0.35);
+}
+
+@media (max-width: 576px) {
+    .cv-download-btn {
+        width: 100%;
+        max-width: 220px;
+        padding: 10px 16px;
+    }
+
+    .cv-download-btn:hover {
+        transform: none;
+        box-shadow: none;
+    }
 }

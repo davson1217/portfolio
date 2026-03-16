@@ -28,7 +28,11 @@ function App() {
           </div>
           <div className="col-sm-12 col-lg-8 personal-container">
             <h5 className="greeting-header text-sm-center">
-              Hello and welcome 👋🏼,
+              Hello and welcome{" "}
+              <span className="wave-emoji" aria-hidden="true">
+                👋🏼
+              </span>
+              ,
             </h5>
             <div className="col-sm-12 spacer mini"></div>
             <h1 className="text-sm-center">

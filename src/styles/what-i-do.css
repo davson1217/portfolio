@@ -1,3 +1,37 @@
 .what-i-do__list {
     list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.what-item-1 {
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.what-i-do-title {
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .what-item-1 {
+        padding: 14px 16px;
+    }
+
+    .what-i-do-icon,
+    .what-i-do-title {
+        width: auto;
+        flex: 0 0 auto;
+        max-width: none;
+    }
+
+    .what-i-do-title {
+        flex: 1 1 auto;
+        padding-left: 14px;
+    }
 }
