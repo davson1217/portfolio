@@ -14,8 +14,9 @@ import {
   faPersonWalking,
   faSchool,
   faServer,
-  faSquarePersonConfined,
   faWindowMaximize,
+  faCircleNodes,
+  faShip,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faDocker,
@@ -36,25 +37,25 @@ const profile = {
     "               Speaking of duties, I strongly align with the agile software development school of thought that champions consistent delivery of working software\n" +
     "               as the primary measure of progress, a result-oriented ideology that carries an undertone of user satisfaction.",
   what_i_do: [
-    {
-      icon: faDatabase,
-      title: "Database Design",
-    },
-    {
-      icon: faSquarePersonConfined,
-      title: "UX Design",
-    },
+    // {
+    //   icon: faDatabase,
+    //   title: "Database Design",
+    // },
+    // {
+    //   icon: faSquarePersonConfined,
+    //   title: "UX Design",
+    // },
     {
       icon: faWindowMaximize,
       title: "Frontend Web Development",
     },
     {
       icon: faServer,
-      title: "Server Development",
+      title: "Backend Development",
     },
     {
-      icon: faGear,
-      title: "Machine Learning",
+      icon: faCircleNodes,
+      title: "Design Patterns",
     },
     {
       icon: faPen,
@@ -72,56 +73,34 @@ const profile = {
   work_experience: [
     {
       role_icon: faCode,
-      role_title: "Fullstack Developer",
+      role_title: "Software Engineer (BE Focused)",
       organisation_icon: faBuilding,
-      organisation_name: "Kickertech UAB",
+      organisation_name: "Olybet Group",
       experience_duration_icon: faCalendar,
-      experience_duration: "July 2022 - Present",
+      experience_duration: "July 2024 - Present",
       has_description: true,
       experience_description:
-        "My duties at Kickertech, a spinoff of TGLAB and subsidiary company of Betsson Group, includes:",
+        "In this role, I independently own the end-to-end development and delivery of critical features. as well as guiding newer/junior colleagues.",
       duties: [
+        {
+          title: "Backend Development (Laravel)",
+          experiences: [
+            {
+              xp: "Own microservice-based integrations connecting third-party casino providers to the core gaming platform, enabling onboarding of 5,000+ casino games across multiple jurisdictions.",
+            },
+            {
+              xp: "Design scalable integration patterns for high-volume partner traffic while maintaining platform stability and regulatory compliance.",
+            },
+            {
+              xp: "Apply SOLID principles and write unit and feature tests to improve maintainability and reliability.",
+            },
+          ],
+        },
         {
           title: "Frontend Development",
           experiences: [
             {
-              xp: "Similar duties as described in my TGLab experience.",
-            },
-          ],
-        },
-        {
-          title: "Backend Development",
-          experiences: [
-            {
-              xp: "Development of API services featuring thousands of events across numerous countries, offering over 1 million odds.",
-            },
-            {
-              xp: "Secured bet placement API services.",
-            },
-            {
-              xp: "Refactoring of backend services from plain Javascript to Typescript",
-            },
-          ],
-        },
-        {
-          title: "Microservice Communication Mechanisms",
-          experiences: [
-            {
-              xp: "REST API",
-            },
-            {
-              xp: "RabbitMQ",
-            },
-            {
-              xp: "Apache Kafka",
-            },
-          ],
-        },
-        {
-          title: "Team/Customer Consultation",
-          experiences: [
-            {
-              xp: "Sync-up meetings",
+              xp: "Building internal tooling features and components with Vue and Pinia.",
             },
           ],
         },
@@ -129,30 +108,27 @@ const profile = {
     },
     {
       role_icon: faCode,
-      role_title: "Frontend Developer",
+      role_title: "Software Engineer (FE Focused)",
       organisation_icon: faBuilding,
-      organisation_name: "TGLab UAB",
+      organisation_name: "Kickertech",
       experience_duration_icon: faCalendar,
-      experience_duration: "November 2021 - July 2022",
+      experience_duration: "March 2021 - July 2024",
       has_description: true,
       experience_description:
         " Worked in a multidisciplinary agile team building a B2B iGaming product.",
       duties: [
         {
-          title: "Frontend Development",
+          title: "Frontend Development (React/Redux)",
           experiences: [
             {
-              xp: "Efficiently manage and display thousands of real-time updates for odds and event parameter in the sportsbook",
-            },
-            {
-              xp: "Built 7 mission-critical UI widgets tailored to a client's needs.",
+              xp: "Managed and rendered thousands of real-time sportsbook updates, including odds and event data, with a focus on performance and accuracy.",
             },
             {
               xp: (
                 <div
                   dangerouslySetInnerHTML={{
                     __html:
-                      "Completely refactored <a href='https://betbonanza.com/sport/todays_soccer' target='_blank' rel='noreferrer' >Betbonanza</a>'s tournament UI to meet its market demands.",
+                      "Built modular, mission-critical UI components tailored to client needs including <a href='https://stake.com' target='_blank' rel='noreferrer' >Stake</a> and <a href='https://betsson.lt' target='_blank' rel='noreferrer' >Betsafe</a> to name a few.",
                   }}
                 />
               ),
@@ -160,16 +136,21 @@ const profile = {
           ],
         },
         {
-          title: "Customer Consultation",
+          title: "Backend Development (Express)",
           experiences: [
             {
-              xp: "End-to-end communication and documentation of a feature in pipeline",
+              xp: "Implemented event feed caching with Memcached to improve data access performance.",
+            },
+            {
+              xp: "Used Socket.IO to deliver real-time updates to the client.",
+            },
+            {
+              xp: "Used RethinkDB changefeeds to support database-driven real-time data propagation.",
             },
           ],
         },
       ],
     },
-
     {
       role_icon: faCode,
       role_title: "Fullstack Developer",
@@ -179,13 +160,13 @@ const profile = {
       experience_duration: "September 2019 - August 2021",
       has_description: true,
       experience_description:
-        "Contracted to build a logistics and shipment tracking system from the grounds up.",
+        "Contracted to build a logistics and shipment tracking system from the grounds up including a CMS.",
       duties: [
         {
           title: "Database Design",
           experiences: [
             {
-              xp: "Relational DB design for 8 tables.",
+              xp: "Relational DB design.",
             },
             {
               xp: "Digital invoice development",
@@ -194,15 +175,14 @@ const profile = {
               xp: "DB seeding scripts to insert up to 900 records.",
             },
             { xp: "Migrations implementation." },
-            { xp: "Content management systems development" },
           ],
         },
         {
           title: "Frontend Development",
           experiences: [
-            {
-              xp: "React Ecosystem",
-            },
+            { xp: "React" },
+            { xp: "Redux (Legacy)" },
+            { xp: "Bootstrap" },
           ],
         },
         {
@@ -272,7 +252,7 @@ const profile = {
             {
               skill_icon: faJs,
               icon_color: "turquoise",
-              skill_title: "JavaScript",
+              skill_title: "JavaScript/Typescript",
             },
             {
               skill_icon: faPhp,
@@ -282,7 +262,7 @@ const profile = {
             {
               skill_icon: faPython,
               icon_color: "turquoise",
-              skill_title: "Python",
+              skill_title: "C#",
             },
           ],
         },
@@ -302,12 +282,12 @@ const profile = {
             {
               skill_icon: faLanguage,
               icon_color: "turquoise",
-              skill_title: "Georgian",
+              skill_title: "Lithuanian",
             },
             {
               skill_icon: faLanguage,
               icon_color: "turquoise",
-              skill_title: "Lithuanian",
+              skill_title: "Georgian",
             },
           ],
         },
@@ -325,27 +305,27 @@ const profile = {
         {
           skill_icon: faReact,
           icon_color: "turquoise",
-          skill_title: "React",
+          skill_title: "React & Redux",
         },
         {
           skill_icon: faVuejs,
           icon_color: "purple",
-          skill_title: "Vue",
+          skill_title: "Vue & Pinia",
         },
         {
           skill_icon: faNodeJs,
           icon_color: "lightblue",
-          skill_title: "ExpressJs",
+          skill_title: "Express",
         },
         {
           skill_icon: faNodeJs,
           icon_color: "red",
-          skill_title: "NestJs",
+          skill_title: "Nest",
         },
         {
           skill_icon: faFlask,
           icon_color: "turquoise",
-          skill_title: "Flask",
+          skill_title: ".Net",
         },
       ],
     },
@@ -357,6 +337,11 @@ const profile = {
           skill_icon: faComputer,
           icon_color: "turquoise",
           skill_title: "Object-oriented Programming",
+        },
+        {
+          skill_icon: faShip,
+          icon_color: "turquoise",
+          skill_title: "CI/CD Pipelines",
         },
         {
           skill_icon: faGithub,
@@ -379,11 +364,6 @@ const profile = {
           skill_title: "Docker",
         },
         {
-          skill_icon: faLeaf,
-          icon_color: "green",
-          skill_title: "Latex",
-        },
-        {
           skill_icon: faGear,
           icon_color: "white",
           skill_title: "SkLearn",
@@ -392,6 +372,52 @@ const profile = {
     },
   ],
   projects: [
+    {
+      title: "Economus UAB",
+      img: "pg1.webp",
+      description:
+        "In this project, I consulted with a client and provided a software development service that included refurbishing of old static website," +
+        "to a data-driven content-manageable website. The project was built under my startup name <a href='https://kabiti.com'>Kabiti</a>.",
+      in_this_project: ["React", "i18", "Express"],
+      see_code: false,
+      see_project: true,
+      barcode_embedded: false,
+      barcode_embed: [],
+      code_link: "https://economus.lt",
+      project_link: "Economus",
+    },
+    {
+      title: "Digital Restaurant Menu",
+      img: "glass2.jpeg",
+      description:
+        " Menutender was a side project that I built from scratch. As the project grew bigger, I added 2 developers to the team and took a technical product ownership role. " +
+        " The project is part of a group of 3 projects built ontop of a microservice architecture." +
+        " For demonstration purposes, you may access the CMS which helps access the customer-facing product as well as interaction with the Express server." +
+        "<ul>" +
+        "<li>Demo User" +
+        "<ul>" +
+        "   <li>username: demo@menutender.com</li>" +
+        "   <li>password: password</li>" +
+        "</ul>" +
+        "</li>" +
+        "</ul>",
+      in_this_project: [
+        "React/Redux",
+        "Express",
+        "MongoDB",
+        "Docker",
+        "Typescript",
+        "Styled Components",
+        "Material UI",
+        "OAuth",
+      ],
+      see_code: true,
+      see_project: true,
+      barcode_embedded: false,
+      barcode_embed: [],
+      code_link: "https://bitbucket.org/david121/bar-cms/src/master/",
+      project_link: "https://lilac-cms.netlify.app/",
+    },
     {
       title: "Pet Social Media",
       img: "cat_dog.webp",
@@ -407,74 +433,40 @@ const profile = {
       code_link: "https://bitbucket.org/david121/petbook-project/src/master/",
       project_link: "Petbook",
     },
-    /*{
-      title: "Digital CV",
-      img: "cv.jpeg",
-      description:
-        "The website which you currently browse is a data-driven React project and although no" +
-        " API calls were made to retrieve data, I exemplified my database design skill in the form of an " +
-        "embedded JSON database style as well as the integration of data in a React UI in such a way that demonstrates" +
-        " the Don't Repeat Yourself (DRY) principle.",
-      in_this_project: ["React", "Bootstrap", "CSS"],
-      see_code: true,
-      see_project: false,
-      barcode_embedded: false,
-      barcode_embed: [],
-      code_link: "https://github.com/davson1217/portfolio",
-      project_link: "CV description",
-    },
-    {
-      title: "Restaurant CMS",
-      img: "glass2.jpeg",
-      description:
-        "This content management system project is part of a series project titled 'Bar' built on a microservice architecture." +
-        " In the CMS, a user is able to make CRUD operations on their product including file (image) upload, create different languages a " +
-        "product can be represented in, as well as currencies. " +
-        "<ul>" +
-        "<li>Demo User 1 (This user has existing data)" +
-        "<ul>" +
-        "   <li>username: demo1@demo.com</li>" +
-        "   <li>password: demoPassword1</li>" +
-        "</ul>" +
-        "</li>" +
-        "<li>Demo User 2 (This user has no data)" +
-        "<ul>" +
-        "   <li>username: demo2@demo.com</li>" +
-        "   <li>password: demoPassword2</li>" +
-        "</ul>" +
-        "</li>" +
-        "</ul>",
-      in_this_project: [
-        "ReactJs",
-        "Redux",
-        "Typescript",
-        "Styled Components",
-        "OAuth",
-      ],
-      see_code: true,
-      see_project: true,
-      barcode_embedded: false,
-      barcode_embed: [],
-      code_link: "https://bitbucket.org/david121/bar-cms/src/master/",
-      project_link: "https://lilac-cms.netlify.app/",
-    },
-    {
-      title: "Restaurant client",
-      img: "glass2.jpeg",
-      description:
-        "This project is the client side of the 'Bar' system where customers are able to browse available products in " +
-        "a restaurant and add desired items into a cart. Below are barcodes belonging to each of the users given earlier in the CMS project",
-      in_this_project: ["ReactJs", "Redux", "Typescript"],
-      see_code: true,
-      see_project: false,
-      barcode_embedded: true,
-      barcode_embed: [
-        // "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D6417924cf50e1f02c3e3bd7a%26idNum%3D2&code=QRCode&multiplebarcodes=true&eclevel=L",
-        // "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D650703aa6d7d64104e441fcf%26idNum%3D100&code=QRCode&multiplebarcodes=true&eclevel=L",
-      ],
-      code_link: "https://bitbucket.org/david121/bar-client/src/main/",
-      project_link: "https://lilac-client.netlify.app/",
-    },*/
+    // {
+    //   title: "Digital CV",
+    //   img: "cv.jpeg",
+    //   description:
+    //     "The website which you currently browse is a data-driven React project and although no" +
+    //     " API calls were made to retrieve data, I exemplified my database design skill in the form of an " +
+    //     "embedded JSON database style as well as the integration of data in a React UI in such a way that demonstrates" +
+    //     " the Don't Repeat Yourself (DRY) principle.",
+    //   in_this_project: ["React", "Bootstrap", "CSS"],
+    //   see_code: true,
+    //   see_project: false,
+    //   barcode_embedded: false,
+    //   barcode_embed: [],
+    //   code_link: "https://github.com/davson1217/portfolio",
+    //   project_link: "CV description",
+    // },
+
+    // {
+    //   title: "Restaurant client",
+    //   img: "glass2.jpeg",
+    //   description:
+    //     "This project is the client side of the 'Bar' system where customers are able to browse available products in " +
+    //     "a restaurant and add desired items into a cart. Below are barcodes belonging to each of the users given earlier in the CMS project",
+    //   in_this_project: ["ReactJs", "Redux", "Typescript"],
+    //   see_code: true,
+    //   see_project: false,
+    //   barcode_embedded: true,
+    //   barcode_embed: [
+    //     // "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D6417924cf50e1f02c3e3bd7a%26idNum%3D2&code=QRCode&multiplebarcodes=true&eclevel=L",
+    //     // "https://barcode.tec-it.com/barcode.ashx?data=https%3A%2F%2Flilac-client.netlify.app%2F%3FclientId%3D650703aa6d7d64104e441fcf%26idNum%3D100&code=QRCode&multiplebarcodes=true&eclevel=L",
+    //   ],
+    //   code_link: "https://bitbucket.org/david121/bar-client/src/main/",
+    //   project_link: "https://lilac-client.netlify.app/",
+    // },
     {
       title: "Yoruba-Lithuanian Transliteration",
       img: "mt.png",
@@ -489,7 +481,7 @@ const profile = {
         "Syllabification Algorithm",
       ],
       see_code: true,
-      see_project: true,
+      see_project: false,
       barcode_embedded: false,
       barcode_embed: [],
       code_link: "https://github.com/davson1217/CART",

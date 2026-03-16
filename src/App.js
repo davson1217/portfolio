@@ -1,11 +1,11 @@
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import {
-  faGithub,
-  faLinkedin,
-  faMedium,
-} from "@fortawesome/free-brands-svg-icons";
+  faAt,
+  faLocationDot,
+  faAward,
+} from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
 import SectionHeader from "./components/section-header";
 import WhatIDo from "./components/what-i-do-list";
 import ProgressCard from "./components/progress-card";
@@ -47,15 +47,15 @@ function App() {
                 </li>
                 <li className="personal-data-item-2 col-sm-6 col-lg-4 row mt-3">
                   <div className="col-sm-1">
-                    <FontAwesomeIcon icon={faGithub} color="turquoise" />
+                    <FontAwesomeIcon icon={faAward} color="turquoise" />
                   </div>
                   <div className="col-sm-10">
                     <a
-                      href="https://github.com/davson1217?tab=repositories"
+                      href="https://www.credly.com/users/david-adebayo-olurebi/badges#credly"
                       target="_blank"
                       rel={"noreferrer"}
                     >
-                      Github
+                      Certs
                     </a>
                   </div>
                 </li>
@@ -164,12 +164,6 @@ function App() {
         <div className="col-sm-12 spacer"></div>
       </div>
     </div>
-    // <div>
-    //   <img
-    //       alt="Barcode Generator TEC-IT"
-    //       src="https://barcode.tec-it.com/barcode.ashx?data=https://lilac-client.netlify.app/&code=QRCode&translate-esc=on&eclevel=L&clientId=650703aa6d7d64104e441fcf&idNumber=10"
-    //   />
-    // </div>
   );
 }
 
